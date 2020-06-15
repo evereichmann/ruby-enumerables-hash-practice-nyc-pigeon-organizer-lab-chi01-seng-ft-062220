@@ -9,6 +9,7 @@ pigeon_name = Hash.new
           pigeon_name[name]={}
         
 #binding.pry
+      end
      end 
     end
   end
