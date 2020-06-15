@@ -5,15 +5,16 @@ pigeon_name = Hash.new
   data.each do |key, value|
     value.each do |inner_key, names|
       names.each do |name|
-        if pigeon_name.include? name
-          pigeon_name[name]={}
-        
-#binding.pry
-      end
+        if !pigeon_name[name]
+         pigeon_name[name] = {}
+         end
+         if !pigeon_name[name][key]
+          !pigeon_name[name][key] = []
+        end
+     pigeon_name[name][key].push(inner_key.to_s)
      end 
     end
   end
-  pigeon_name
 end  
 
 # used the video to get through lab 
