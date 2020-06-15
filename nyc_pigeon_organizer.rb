@@ -11,7 +11,7 @@ pigeon_name = Hash.new
          if !pigeon_name[name][key]
           !pigeon_name[name][key] = []
         end
-     pigeon_name[name][key].push(inner_key.to_s)
+       pigeon_name[name][key].push(inner_key.to_s)
      end 
     end
   end
