@@ -7,8 +7,9 @@ pigeon_name = Hash.new
       names.each do |name|
         if pigeon_name.include? name
           pigeon_name[name]
-        else 
+        
 binding.pry
+else 
      end 
     end
   end
