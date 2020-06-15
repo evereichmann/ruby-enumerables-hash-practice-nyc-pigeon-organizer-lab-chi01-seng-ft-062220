@@ -6,11 +6,10 @@ pigeon_name = Hash.new
     value.each do |inner_key, names|
       names.each do |name|
         if pigeon_name.include? name
-          pigeon_name[name]
+          pigeon_name[name]={}
         
-binding.pry
+#binding.pry
 else 
-end
      end 
     end
   end
